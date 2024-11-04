@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustancias Químicas de Uso Cotidiano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sustancias Químicas de Uso Cotidiano</h1>
+        <p>Explora la composición, reactividad y riesgos de los químicos comunes en el hogar y en el colegio.</p>
+    </header>
+
+    <main>
+        <section id="quimicos">
+            <h2>Sustancias Comunes y sus Riesgos</h2>
+            <div class="quimico" onclick="mostrarDetalles('detergentes')">
+                <h3>Detergentes</h3>
+                <p>Composición: Surfactantes, fosfatos, fragancias.</p>
+            </div>
+            <div class="detalles" id="detergentes">
+                <p><strong>Reactividad:</strong> Puede irritar la piel y ojos; evitar mezclarlos con ácidos o amoniaco.</p>
+                <p><strong>Riesgos:</strong> Irritación respiratoria, toxicidad en contacto prolongado.</p>
+                <p><strong>Medidas de Seguridad:</strong> Usar guantes, mantener fuera del alcance de niños.</p>
+            </div>
+
+            <div class="quimico" onclick="mostrarDetalles('medicamentos')">
+                <h3>Medicamentos</h3>
+                <p>Composición: Activos farmacológicos, excipientes.</p>
+            </div>
+            <div class="detalles" id="medicamentos">
+                <p><strong>Reactividad:</strong> Algunos pueden reaccionar con otros medicamentos o alimentos.</p>
+                <p><strong>Riesgos:</strong> Toxicidad por sobredosis, efectos secundarios.</p>
+                <p><strong>Medidas de Seguridad:</strong> Seguir indicaciones médicas, no automedicarse.</p>
+            </div>
+
+            <div class="quimico" onclick="mostrarDetalles('plaguicidas')">
+                <h3>Plaguicidas</h3>
+                <p>Composición: Organofosforados, piretroides, otros químicos.</p>
+            </div>
+            <div class="detalles" id="plaguicidas">
+                <p><strong>Reactividad:</strong> Inflamable y tóxico en contacto directo.</p>
+                <p><strong>Riesgos:</strong> Problemas respiratorios, toxicidad crónica.</p>
+                <p><strong>Medidas de Seguridad:</strong> Usar en lugares ventilados, no inhalar.</p>
+            </div>
+        </section>
+
+        <section id="pregunta">
+            <h2>Reflexión</h2>
+            <p>¿Cómo afectan las sustancias químicas de uso cotidiano en el hogar y en el trabajo, nuestra salud y el medio ambiente?</p>
+            <div id="respuesta">
+                <p>Las sustancias químicas que usamos diariamente, como detergentes, plaguicidas y medicamentos, pueden tener efectos significativos en nuestra salud y el medio ambiente. En el hogar, su manipulación inadecuada puede causar irritaciones en la piel, alergias o problemas respiratorios, sobre todo en personas vulnerables. En el ámbito laboral, la exposición prolongada a ciertos químicos incrementa el riesgo de enfermedades crónicas.</p>
+                <p>En el medio ambiente, estas sustancias, si no se eliminan correctamente, pueden contaminar el agua y el suelo. Los detergentes y plaguicidas, por ejemplo, contienen compuestos que afectan la vida acuática y reducen la biodiversidad, mientras que algunos residuos farmacéuticos alteran los ecosistemas acuáticos. La gestión responsable y el uso moderado son clave para minimizar estos riesgos.</p>
+            </div>
+            <textarea id="comentario" placeholder="Escribe tu opinión aquí..."></textarea>
+            <button onclick="enviarComentario()">Enviar Comentario</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Información sobre Químicos de Uso Cotidiano</p>
+        <h3>Ciencias Para La Ciudadania</h3>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>
+
